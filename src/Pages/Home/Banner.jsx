@@ -13,11 +13,11 @@ const Banner = () => {
                     <img src={img1} className="w-full rounded-xl" />
                     <div className="absolute rounded-xl flex items-center h-full left-0 top-0 bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)]">
                         <div className='text-white space-y-7 pl-12 w-1/2'>
-                            <h2 className='text-6xl font-bold'>Premiun Car Rental In  New York</h2>
-                            <p>Don't deny yourself the pleasure of driving the best premium cars from around the world here and now</p>
+                            <h2 className='text-6xl font-bold'> Get Your Best Toys</h2>
+                            <p>Given a toy car to play with, he turned it upside down and spun its wheels. One of them tries to feed me a toy car.</p>
                             <div>
                                 <button className="btn btn-primary mr-5">Discover More</button>
-                                <button className="btn btn-outline btn-secondary">Latest Car Brand</button>
+                                <button className="btn btn-outline btn-secondary">Latest Toy Brand</button>
                             </div>
                         </div>
                     </div>
@@ -30,8 +30,8 @@ const Banner = () => {
                     <img src={img2} className="w-full rounded-xl" />
                     <div className="absolute rounded-xl flex items-center h-full left-0 top-0 bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)]">
                         <div className='text-white space-y-7 pl-12 w-1/2'>
-                        <h2 className='text-6xl font-bold'>Premiun Car Rental In  New York</h2>
-                            <p>Don't deny yourself the pleasure of driving the best premium cars from around the world here and now</p>
+                        <h2 className='text-6xl font-bold'> Get Your Best Toys</h2>
+                            <p>Given a toy car to play with, he turned it upside down and spun its wheels. One of them tries to feed me a toy car.</p>
                             <div>
                                 <button className="btn btn-primary mr-5">Discover More</button>
                                 <button className="btn btn-outline btn-secondary">Latest Project Car Brand</button>
@@ -47,11 +47,11 @@ const Banner = () => {
                     <img src={img3} className="w-full rounded-xl" />
                     <div className="absolute rounded-xl flex items-center h-full left-0 top-0 bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)]">
                         <div className='text-white space-y-7 pl-12 w-1/2'>
-                            <h2 className='text-6xl font-bold'>Premiun Car Rental In  New York</h2>
-                            <p>Don't deny yourself the pleasure of driving the best premium cars from around the world here and now</p>
+                            <h2 className='text-6xl font-bold'> Get Your Best Toys</h2>
+                            <p>Given a toy car to play with, he turned it upside down and spun its wheels. One of them tries to feed me a toy car.</p>
                             <div>
                                 <button className="btn btn-primary mr-5">Discover More</button>
-                                <button className="btn btn-outline btn-secondary">Latest Car Brand</button>
+                                <button className="btn btn-outline btn-secondary">Latest Toy Brand</button>
                             </div>
                         </div>
                     </div>
@@ -64,11 +64,11 @@ const Banner = () => {
                     <img src={img4} className="w-full rounded-xl" />
                     <div className="absolute rounded-xl flex items-center h-full left-0 top-0 bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)]">
                         <div className='text-white space-y-7 pl-12 w-1/2'>
-                            <h2 className='text-6xl font-bold'>Premiun Car Rental In  New York</h2>
-                            <p>Don't deny yourself the pleasure of driving the best premium cars from around the world here and now</p>
+                            <h2 className='text-6xl font-bold'> Get Your Best Toys</h2>
+                            <p>Given a toy car to play with, he turned it upside down and spun its wheels. One of them tries to feed me a toy car.</p>
                             <div>
                                 <button className="btn btn-primary mr-5">Discover More</button>
-                                <button className="btn btn-outline btn-secondary">Latest Car Brand</button>
+                                <button className="btn btn-outline btn-secondary">Latest Toy Brand</button>
                             </div>
                         </div>
                     </div>

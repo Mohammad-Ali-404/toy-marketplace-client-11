@@ -26,16 +26,16 @@ const Navbar = () => {
                     </div>
                     <ul className="items-stretch hidden space-x-3 lg:flex">
                         <li className="flex">
-                            <a rel="noopener noreferrer" href="#home" className="flex items-center px-4 -mb-1 dark:border-transparent dark:text-violet-400 dark:border-violet-400">Home</a>
+                            <Link rel="noopener noreferrer" to='/' className="flex items-center px-4 -mb-1 dark:border-transparent dark:text-violet-400 dark:border-violet-400">Home</Link>
                         </li>
                         <li className="flex">
-                            <a rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 dark:border-transparent">All Toys</a>
+                            <Link rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 dark:border-transparent">All Toys</Link>
                         </li>
                         <li className="flex">
-                            <a rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 dark:border-transparent">My Toys</a>
+                            <Link rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 dark:border-transparent">My Toys</Link>
                         </li>
                         <li className="flex">
-                            <a rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 dark:border-transparent">Blogs</a>
+                            <Link rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 dark:border-transparent">Blogs</Link>
                         </li>
                     </ul>
                     <div className="items-center flex-shrink-0 hidden lg:flex">

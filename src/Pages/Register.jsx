@@ -8,34 +8,45 @@ const Register = () => {
     return (
         <div>
            <form className="w-full max-w-md p-8 space-y-3 rounded-xl mx-auto mb-8 mt-8 dark:text-gray-100 bg-gray-300">
-                <h1 className="text-2xl font-bold text-center">Login</h1>
-                <form novalidate="" action="" className="space-y-6 ng-untouched ng-pristine ng-valid">
-                    <div className="space-y-1 text-sm">
-                        <label for="username" className="block dark:text-gray-400">Username</label>
-                        <input type="text" name="username" id="username" placeholder="Username" className="w-full px-4 py-3 rounded-md dark:border-gray-700 dark:bg-gray-900 dark:text-gray-100 focus:dark:border-violet-400" />
-                    </div>
-                    <div className="space-y-1 text-sm">
-                        <label for="password" className="block dark:text-gray-400">Password</label>
-                        <input type="password" name="password" id="password" placeholder="Password" className="w-full px-4 py-3 rounded-md dark:border-gray-700 dark:bg-gray-900 dark:text-gray-100 focus:dark:border-violet-400" />
-                        <div className="flex justify-end text-xs dark:text-gray-400">
-                            <a rel="noopener noreferrer" href="#">Forgot Password?</a>
-                        </div>
-                    </div>
-                    <button className="block w-full p-3 text-center rounded-sm dark:text-gray-900 dark:bg-violet-400">Sign in</button>
+                <h1 className="text-2xl font-bold text-center">Register</h1>
+                <form>
+                <div  className="card-body">
+                <div className="form-control">
+                    <label className="label">
+                        <span className="label-text">Name</span>
+                    </label>
+                    <input type="text" placeholder="Enter Your Name" name='name' className="input input-bordered" required/>
+                </div>
+
+                <div className="form-control">
+                    <label className="label">
+                        <span className="label-text">Email</span>
+                    </label>
+                    <input type="text" placeholder="email" name='email' className="input input-bordered" required/>
+                </div>
+                <div className="form-control">
+                    <label className="label">
+                            <span className="label-text">Photo URL</span>
+                    </label>
+                    <input type="text" placeholder="Enter your photo" name='photoURL' className="input input-bordered" required/>
+                </div>
+                <div className="form-control">
+                        <label className="label">
+                            <span className="label-text">Password</span>
+                        </label>
+                        <input type="password" placeholder="password" name='password' className="input input-bordered" required/>
+                    <label className="label">
+                    <p>Already have an account Please <Link to='/login'><button className="btn btn-link">Login</button></Link></p>
+                    </label>
+                </div>
+                <div className="form-control">
+                  <button className="btn btn-primary" type='submit'>Register</button>
+                </div>
+                <p className='text-red-800'></p>
+                <p className='text-green-600'></p>
+            </div>
                 </form>
-                <div className="flex items-center pt-4 space-x-1">
-                    <div className="flex-1 h-px sm:w-16 dark:bg-gray-700"></div>
-                    <p className="px-3 text-sm dark:text-gray-400">Login with social accounts</p>
-                    <div className="flex-1 h-px sm:w-16 dark:bg-gray-700"></div>
-                </div>
-                <div className="flex justify-center space-x-4">
-                    <button aria-label="Log in with Google" className="p-3 rounded-lg text-3xl">
-                        <FcGoogle></FcGoogle>
-                    </button>
-                </div>
-                <p className="text-sm text-center sm:px-6 dark:text-gray-400">Don't have an account? 
-                    <Link  rel="noopener noreferrer" href="#" className="underline dark:text-gray-100"> Sign up</Link>
-                </p>
+
             </form>
         </div>
     );

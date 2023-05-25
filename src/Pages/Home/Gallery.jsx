@@ -14,7 +14,7 @@ import img10 from '../../assets/gallery/image10.png'
 const Gallery = () => {
     return (
         <div className='mt-12'>
-            <h1 className='text-4xl text-center italic font-bold'>Our Car Toy Gallery</h1>
+            <h1 className='text-4xl text-center  font-extrabold'>Our Car Toy Gallery</h1>
             <Marquee>
             <section className="py-6 dark:bg-gray-800 mt-8">
                 <div className="container flex flex-col justify-center p-4 mx-auto">

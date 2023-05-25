@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 const Register = () => {
     return (
         <div>
-           <form className="w-full max-w-md p-8 space-y-3 rounded-xl mx-auto mb-8 mt-8 dark:text-gray-100 bg-gray-300">
+           <div className="w-full max-w-md p-8 space-y-3 rounded-xl mx-auto mb-8 mt-8 dark:text-gray-100 bg-gray-300">
                 <h1 className="text-2xl font-bold text-center">Register</h1>
                 <form>
                 <div  className="card-body">
@@ -47,7 +47,7 @@ const Register = () => {
             </div>
                 </form>
 
-            </form>
+            </div>
         </div>
     );
 };

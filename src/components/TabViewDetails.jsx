@@ -37,7 +37,7 @@ const TabviewDetails = ({ allCategory, subCategory, altText }) => {
             {allCategory
                 .filter((category) => category.subCategory === subCategory)
                 .map((item) => (
-                    <div key={item._id} className="">
+                    <div key={item._id} className="grid grid-cols-2 gap-4">
                         <div className="card w-96 bg-base-100 shadow-xl">
                             <figure className="px-10 pt-10">
                                 <img src={item.photoUrl} alt={altText} className="rounded-xl" />
@@ -47,23 +47,10 @@ const TabviewDetails = ({ allCategory, subCategory, altText }) => {
                                 <p>Price: {item.price}</p>
                                 <p>Rating: {item.rating}</p>
                                 <div className="card-actions justify-content-end">
-                                    <Link to={`/TabviewDetailsallinfo/${item._id}`}><button onClick={handleClick}  className="btn btn-primary">View details</button></Link>
+                                    <Link to={`/toyTabView/${item._id}`}><button onClick={handleClick}  className="btn btn-primary">View details</button></Link>
                                 </div>
                             </div>
                         </div>
-                        {/* <div className="card bg-light shadow">
-                           
-                              <figure><img src={item.photoUrl} alt={altText} /></figure>
-
-                            <div className="card-body">
-                                <h3 className="card-title">Name: {item.name}</h3>
-                                <p>Price: {item.price}</p>
-                                <p>Rating: {item.rating}</p>
-                                <div className="card-actions justify-content-end">
-                                    <Link to={`/TabviewDetailsallinfo/${item._id}`}><button onClick={handleClick}  className="btn btn-primary">View details</button></Link>
-                                </div>
-                            </div>
-                        </div> */}
                     </div>
                 ))}
         </div>

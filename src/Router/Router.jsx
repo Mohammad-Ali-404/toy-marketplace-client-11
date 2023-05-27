@@ -6,6 +6,7 @@ import Register from "../Pages/Register";
 import AddToys from "../Pages/AddToys";
 import AllToys from "../Pages/AllToys";
 import PrivateRoute from "./PivateRoute";
+import ToyTabView from "../Pages/ToyTabView";
 
 const router = createBrowserRouter([
     {
@@ -32,6 +33,11 @@ const router = createBrowserRouter([
           path:'alltoys',
           element:<AllToys></AllToys>,
           loader: () => fetch('http://localhost:5000/addtoy')
+        },
+        {
+          path:'toyTabView/:id',
+          element:<PrivateRoute> <ToyTabView></ToyTabView> </PrivateRoute>,
+          loader:({params})=>fetch(`http://localhost:5000/addtoy/${params.id}`)
         }
       ]
     },

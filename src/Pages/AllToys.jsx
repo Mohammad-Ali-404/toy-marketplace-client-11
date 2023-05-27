@@ -45,15 +45,20 @@ const AllToys = () => {
               </tr>
             </thead>
             <tbody>
-              {/* {searchResults.map((toysport, index) => (
+              {searchResults.map((toysport, index) => (
                 <AllToysTable
                   key={toysport._id}
                   index={index + 1}
                   toysport={toysport}
                 />
-              ))} */}
+              ))}
             </tbody>
           </table>
+          {limit < searchResults.length && (
+          <button className="btn btn-primary" onClick={handleLoadMore}>
+            Load More
+          </button>
+        )}
         </div>
     );
 };

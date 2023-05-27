@@ -1,11 +1,18 @@
 /* eslint-disable no-unused-vars */
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../assets/logo/logo.jpeg'
+import { AuthContext } from '../../Providers/AuthProvider';
 const Navbar = () => {
+    const { user, logOut } = useContext(AuthContext);
+  const handleLogout = () => {
+    logOut()
+      .then()
+      .catch(error => console.log(error))
+  }
     const navItems = <>
     <li><Link to='/'>Home</Link></li>
-    <li><Link>All Toys</Link></li>
+    <li><Link to='alltoys'>All Toys</Link></li>
     <li><Link>My Toys</Link></li>
     <li><Link to='addtoys'>Add Toys</Link></li>
     <li><Link>Blogs</Link></li>
@@ -30,7 +37,7 @@ const Navbar = () => {
                             <Link rel="noopener noreferrer" to='/' className="flex items-center px-4 -mb-1 dark:border-transparent dark:text-violet-400 dark:border-violet-400">Home</Link>
                         </li>
                         <li className="flex">
-                            <Link rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 dark:border-transparent">All Toys</Link>
+                            <Link rel="noopener noreferrer" to='alltoys' className="flex items-center px-4 -mb-1 dark:border-transparent">All Toys</Link>
                         </li>
                         <li className="flex">
                             <Link rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 dark:border-transparent">My Toys</Link>
@@ -42,8 +49,24 @@ const Navbar = () => {
                             <Link rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 dark:border-transparent">Blogs</Link>
                         </li>
                     </ul>
-                    <div className="items-center flex-shrink-0 hidden lg:flex">
-                        <Link to='/login'><button className="self-center px-8 py-3 font-semibold rounded dark:bg-violet-400 dark:text-gray-900">Sign In</button></Link>
+                    
+              <div className="col-lg-6 items-center flex-shrink-0 hidden lg:flex">
+              <div className='mr-5'>
+                  {user && (
+                    <div className="profile mb-1">
+                      <img title={user.displayName} className="w-12 h-12 rounded-full" src={user.photoURL} />
+                    </div>
+                  )}
+                </div>
+                <div>
+                  {user ? (
+                    <button onClick={handleLogout} className="btn btn-success">Logout</button>
+                  ) : (
+                    <Link to="/login">
+                      <button className="btn btn-success">Login</button>
+                    </Link>
+                  )}
+                </div>
                     </div>
                     
                 </div>

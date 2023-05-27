@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
-import React, { useEffect } from 'react';
-
+import React, { useEffect, useState } from 'react';
+import Swal from 'sweetalert2'
 const AddToys = () => {
     const handleAddToy = event =>{
         event.preventDefault();
@@ -10,11 +10,13 @@ const AddToys = () => {
         const quantity = form.quantity.value;
         const seller = form.seller.value;
         const email = form.email.value;
-        const category = form.category.value;
+        const subCategory = form.subCategory.value;
+        const price = parseFloat(form.price.value);
+        const rating = form.rating.value;
         const details = form.details.value;
         const photoUrl = form.photo.value;
 
-        const newtoy = {name, quantity, seller, email, category, details, photoUrl};
+        const newtoy = {name, quantity, seller, email, subCategory, price, rating, details, photoUrl};
         console.log(newtoy)
         // send added toy data
         fetch('http://localhost:5000/addtoy', {
@@ -25,8 +27,27 @@ const AddToys = () => {
             body: JSON.stringify(newtoy)
         })
         .then(res => res.json())
-        .then(data => console.log(data))
+        .then(data => {console.log(data);
+            if (data.insertedId) {
+                Swal.fire({
+                    title: 'Success!',
+                    text: 'user added successfuly',
+                    icon: 'success',
+                    confirmButtonText: 'Cool'
+                    })
+            }
+            form.reset()
+        })
     }
+    const bookCategories = ["Sports Car Toy", "Regular Car Toy", "Mini Car Toy"];
+
+        const [selectedToyCategory, setSelectedToyCategory] = useState(
+          bookCategories[0]
+        );
+      
+        const handleChangeSelectedValue = (event) => {
+          setSelectedToyCategory(event.target.value);
+        };
     return (
         // <div>
         //     <h1 className='text-4xl text-center font-extrabold'>Add Toy</h1>
@@ -75,12 +96,22 @@ const AddToys = () => {
                 {/* form category and details row */}
                 <div className="md:flex mb-8">
                     <div className="form-control md:w-1/2">
-                        <label className="label">
-                            <span className="label-text">Category</span>
-                        </label>
-                        <label className="input-group">
-                            <input type="text" name="category" placeholder="Category" className="input input-bordered w-full" />
-                        </label>
+                    <label className="label">
+                <span className="label-text">Sub Category</span>
+                    </label>
+                    <select
+                        id="inputState"
+                        name="subCategory"
+                        className="form-select p-3 rounded-lg "
+                        value={selectedToyCategory}
+                        onChange={handleChangeSelectedValue}
+                    >
+                        {bookCategories.map((option) => (
+                        <option key={option} value={option}>
+                            {option}
+                        </option>
+                        ))}
+                    </select>
                     </div>
                     <div className="form-control md:w-1/2 ml-4">
                         <label className="label">
@@ -88,6 +119,25 @@ const AddToys = () => {
                         </label>
                         <label className="input-group">
                             <input type="text" name="details" placeholder="Details" className="input input-bordered w-full" />
+                        </label>
+                    </div>
+                </div>
+
+                <div className="md:flex mb-8">
+                    <div className="form-control md:w-1/2 ml-4">
+                        <label className="label">
+                            <span className="label-text">Price</span>
+                        </label>
+                        <label className="input-group">
+                            <input type="text" name="price" placeholder="Price" className="input input-bordered w-full" />
+                        </label>
+                    </div>
+                    <div className="form-control md:w-1/2 ml-4">
+                        <label className="label">
+                            <span className="label-text">Rating</span>
+                        </label>
+                        <label className="input-group">
+                            <input type="text" name="rating" placeholder="Rating" className="input input-bordered w-full" />
                         </label>
                     </div>
                 </div>

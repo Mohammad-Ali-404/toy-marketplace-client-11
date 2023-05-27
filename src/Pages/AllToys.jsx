@@ -32,7 +32,7 @@ const AllToys = () => {
   
     return (
         <div>
-              <table className="table ">
+              <table className="table w-full">
             <thead>
               <tr>
                 <th scope="col">#</th>

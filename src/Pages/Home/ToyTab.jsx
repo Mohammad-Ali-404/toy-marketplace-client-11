@@ -31,22 +31,22 @@ const ToyTab = () => {
         <TabPanel>
             <TabViewDetails
                 allCategory={allCategory}
-                subCategory="Basketball"
-                altText="Basketball toys"
+                subCategory="Sports Car Toy"
+                altText="sports car toys"
             />
         </TabPanel>
         <TabPanel>
             <TabViewDetails
                 allCategory={allCategory}
-                subCategory="Cricket toys"
-                altText="Cricket toys"
+                subCategory="Regular Car Toy"
+                altText="regular car toys"
             />
         </TabPanel>
         <TabPanel>
             <TabViewDetails
                 allCategory={allCategory}
-                subCategory="Soccer toys"
-                altText="Soccer toys"
+                subCategory="Mini Car Toy"
+                altText="mini car toys"
             />
         </TabPanel>
 

@@ -6,15 +6,19 @@ import { useState } from 'react'
 import { useEffect } from 'react'
 import MyToysView from '../components/MyToysView'
 import { AuthContext } from '../Providers/AuthProvider'
+import ToyZoneTitle from '../TitleHook/ToyZoneTitle'
 export default function MyToys() {
+  ToyZoneTitle('MyToys')
   const { user } = useContext(AuthContext)
   const [items, setItems] = useState([])
   const [asc,setAsc] = useState(true);
   useEffect(() => {
-    fetch(`http://localhost:5000/addtoy?email=${user.email}&sort=${asc ? 'asc' : 'desc'}`)
+    if (user?.email) {
+      fetch(`http://localhost:5000/addtoy?email=${user.email}&sort=${asc ? 'asc' : 'desc'}`)
       .then((res) => res.json())
       .then((data) => setItems(data));
-  }, [user, asc]);
+    }
+  }, [user?.email, asc]);
   
 
   const handleDelete = _id => {

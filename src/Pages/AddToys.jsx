@@ -1,7 +1,9 @@
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from 'react';
 import Swal from 'sweetalert2'
+import ToyZoneTitle from '../TitleHook/ToyZoneTitle';
 const AddToys = () => {
+    ToyZoneTitle('addToy')
     const handleAddToy = event =>{
         event.preventDefault();
 

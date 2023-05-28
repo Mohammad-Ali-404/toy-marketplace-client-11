@@ -15,7 +15,7 @@ const Navbar = () => {
     <li><Link to='alltoys'>All Toys</Link></li>
     <li><Link to='/mytoys'>My Toys</Link></li>
     <li><Link to='addtoys'>Add Toys</Link></li>
-    <li><Link>Blogs</Link></li>
+    <li><Link to='blog'>Blogs</Link></li>
     </>
     return (
         <div>
@@ -46,7 +46,7 @@ const Navbar = () => {
                             <Link rel="noopener noreferrer" to='addtoys' className="flex items-center px-4 -mb-1 dark:border-transparent">Add Toys</Link>
                         </li>
                         <li className="flex">
-                            <Link rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 dark:border-transparent">Blogs</Link>
+                            <Link rel="noopener noreferrer" to='blog' className="flex items-center px-4 -mb-1 dark:border-transparent">Blogs</Link>
                         </li>
                     </ul>
                     

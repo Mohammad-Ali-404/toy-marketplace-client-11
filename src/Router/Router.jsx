@@ -10,6 +10,7 @@ import ToyTabView from "../Pages/ToyTabView";
 import MyToys from "../Pages/MyToys";
 import UpdateToy from "../Pages/UpdateToy";
 import Error from "../Pages/Error";
+import Blog from "../Pages/Blog";
 
 const router = createBrowserRouter([
     {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
         {
             path:'register',
             element:<Register></Register>
+        },
+        {
+          path:'blog',
+          element:<Blog></Blog>
         },
         {
           path:'addtoys',

@@ -44,16 +44,16 @@ const Footer = () => {
                             </ul>
                         </div>
                         <div className="space-y-3">
-                            <h3 className="uppercase dark:text-gray-50">Developers</h3>
+                            <h3 className="uppercase dark:text-gray-50">Contact Us</h3>
                             <ul className="space-y-1">
                                 <li>
-                                    <a rel="noopener noreferrer" href="#">Public API</a>
+                                    <a rel="noopener noreferrer" href="#">Phone: 012356478</a>
                                 </li>
                                 <li>
-                                    <a rel="noopener noreferrer" href="#">Documentation</a>
+                                    <a rel="noopener noreferrer" href="#">Address: 37/1 jinnat house dhaka</a>
                                 </li>
                                 <li>
-                                    <a rel="noopener noreferrer" href="#">Guides</a>
+                                    <a rel="noopener noreferrer" href="#">email: toyzone@gmail.com</a>
                                 </li>
                             </ul>
                         </div>

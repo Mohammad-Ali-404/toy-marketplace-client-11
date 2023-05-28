@@ -33,11 +33,11 @@ const TabviewDetails = ({ allCategory, subCategory, altText }) => {
         <div data-aos="fade-left"
         data-aos-anchor="#example-anchor"
         data-aos-offset="500"
-        data-aos-duration="500" className="row row-cols-1 row-cols-sm-4 row-cols-md-4 justify-content-center mx-auto mt-5 mb-5 gap-4">
+        data-aos-duration="500" className="grid grid-cols-3 gap-4">
             {allCategory
                 .filter((category) => category.subCategory === subCategory)
                 .map((item) => (
-                    <div key={item._id} className="grid grid-cols-2 gap-4">
+                    <div key={item._id} className="">
                         <div className="card w-96 bg-base-100 shadow-xl">
                             <figure className="px-10 pt-10">
                                 <img src={item.photoUrl} alt={altText} className="rounded-xl" />

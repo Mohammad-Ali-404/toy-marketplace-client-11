@@ -6,7 +6,9 @@ import { FcGoogle } from "react-icons/fc";
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import { AuthContext } from '../Providers/AuthProvider';
+import ToyZoneTitle from '../TitleHook/ToyZoneTitle';
 const Login = () => {
+  ToyZoneTitle('Login')
     const { signIn, signInWithGoogle } = useContext(AuthContext);
   const navigate = useNavigate();
   const location = useLocation();

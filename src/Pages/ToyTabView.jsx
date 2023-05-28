@@ -1,8 +1,10 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
+import ToyZoneTitle from '../TitleHook/ToyZoneTitle';
 
 const ToyTabView = () => {
+    ToyZoneTitle('ToyDetails')
     const toyTabView = useLoaderData();
     const { photoUrl, name, seller, SellerEmail, price, rating, quantity, details } = toyTabView;
     console.log(toyTabView)

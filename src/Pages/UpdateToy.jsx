@@ -2,7 +2,9 @@
 import React from 'react';
 import { useLoaderData } from 'react-router';
 import Swal from 'sweetalert2'
+import ToyZoneTitle from '../TitleHook/ToyZoneTitle';
 export default function UpdateToy() {
+    ToyZoneTitle('UpdateToy')
     const sportz = useLoaderData();
     const { _id, price, quantity, details } = sportz;
 

@@ -3,6 +3,7 @@ import React from 'react';
 import Banner from './Home/Banner';
 import Gallery from './Home/Gallery';
 import ToyTab from './Home/ToyTab';
+import Experience from './Home/Experience';
 
 const Home = () => {
     return (
@@ -10,7 +11,7 @@ const Home = () => {
             <Banner></Banner>
             <Gallery></Gallery>
             <ToyTab></ToyTab>
-            <h5>Homeeeeeeeeeee</h5>
+            <Experience></Experience>
         </div>
     );
 };

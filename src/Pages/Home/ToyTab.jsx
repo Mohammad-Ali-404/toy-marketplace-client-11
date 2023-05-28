@@ -15,7 +15,7 @@ const ToyTab = () => {
     return (
         <div className="container">
             <Tabs>
-        <h2 className="text-center mb-4">Toy All Category</h2>
+        <h2 className='text-4xl text-center mb-5 font-extrabold'>Toy All Category</h2>
         <TabList className="flex justify-center list-unstyled">
             <Tab>
                 <button className="btn btn-primary me-3">Sports Car Toy</button>

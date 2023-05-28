@@ -43,7 +43,7 @@ export default function UpdateToy() {
     return (
          <div>
             <div className="container my-5">
-                <h2 className="text-center mb-5">Update My Toy</h2>
+                <h2 className='text-4xl text-center mb-5 font-extrabold'>Update My Toy</h2>
                <div className="card p-4 mx-auto" style={{ maxWidth: '500px' }}>
             <form onSubmit={handleUpdate}>
                <div className="form-control">

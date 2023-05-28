@@ -13,7 +13,7 @@ const Navbar = () => {
     const navItems = <>
     <li><Link to='/'>Home</Link></li>
     <li><Link to='alltoys'>All Toys</Link></li>
-    <li><Link>My Toys</Link></li>
+    <li><Link to='/mytoys'>My Toys</Link></li>
     <li><Link to='addtoys'>Add Toys</Link></li>
     <li><Link>Blogs</Link></li>
     </>
@@ -40,7 +40,7 @@ const Navbar = () => {
                             <Link rel="noopener noreferrer" to='alltoys' className="flex items-center px-4 -mb-1 dark:border-transparent">All Toys</Link>
                         </li>
                         <li className="flex">
-                            <Link rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 dark:border-transparent">My Toys</Link>
+                            <Link rel="noopener noreferrer" to='/mytoys' className="flex items-center px-4 -mb-1 dark:border-transparent">My Toys</Link>
                         </li>
                         <li className="flex">
                             <Link rel="noopener noreferrer" to='addtoys' className="flex items-center px-4 -mb-1 dark:border-transparent">Add Toys</Link>

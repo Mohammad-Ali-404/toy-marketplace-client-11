@@ -44,7 +44,7 @@ const TabviewDetails = ({ allCategory, subCategory, altText }) => {
                             </figure>
                             <div className="card-body items-center text-center">
                                 <h2 className="card-title">Name: {item.name}</h2>
-                                <p>Price: {item.price}</p>
+                                <p>Price: {item.price}$</p>
                                 <p>Rating: {item.rating}</p>
                                 <div className="card-actions justify-content-end">
                                     <Link to={`/toyTabView/${item._id}`}><button onClick={handleClick}  className="btn btn-primary">View details</button></Link>

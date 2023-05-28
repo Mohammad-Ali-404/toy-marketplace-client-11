@@ -9,7 +9,7 @@ const AddToys = () => {
         const name = form.name.value;
         const quantity = form.quantity.value;
         const seller = form.seller.value;
-        const email = form.email.value;
+        const email = form.SellerEmail.value;
         const subCategory = form.subCategory.value;
         const price = parseFloat(form.price.value);
         const rating = form.rating.value;
@@ -89,7 +89,7 @@ const AddToys = () => {
                             <span className="label-text">Seller Email</span>
                         </label>
                         <label className="input-group">
-                            <input type="text" name="email" placeholder="seller email" className="input input-bordered w-full" />
+                            <input type="text" name="SellerEmail" placeholder="seller email" className="input input-bordered w-full" />
                         </label>
                     </div>
                 </div>

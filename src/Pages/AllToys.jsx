@@ -32,7 +32,17 @@ const AllToys = () => {
   
     return (
         <div>
-              <table className="table w-full">
+          <div className="flex">
+              <div className="input-group w-25  justify-center">
+              <input ref={searchRef} type="search" name="Search" placeholder="Search..."  className="input input-bordered input-md w-full max-w-xs" />
+                <div className="input-group-append">
+                  <button onClick={handleSearch} className="btn btn-primary">
+                    Search
+                  </button>
+                </div>
+              </div>
+          </div>
+              <table className="table w-full mt-4">
             <thead>
               <tr>
                 <th scope="col">#</th>

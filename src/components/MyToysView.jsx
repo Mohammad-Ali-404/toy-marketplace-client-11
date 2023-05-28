@@ -15,7 +15,7 @@ export default function MyToysView({ index, item, handleDelete }) {
             <td>{quantity}</td>
             <td>{description}</td>
             <td>
-                <Link to={`updateSports/${_id}`}><button className="btn btn-primary ">Update</button></Link>
+                <Link to={`updateToy/${_id}`}><button className="btn btn-primary ">Update</button></Link>
                 <button onClick={() => handleDelete(_id)} className="btn btn-danger mx-4">Delete</button>
             </td>
         </tr>

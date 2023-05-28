@@ -49,9 +49,7 @@ const AddToys = () => {
           setSelectedToyCategory(event.target.value);
         };
     return (
-        // <div>
-        //     <h1 className='text-4xl text-center font-extrabold'>Add Toy</h1>
-        // </div>
+
         <div className="bg-[#F4F3F0] p-24">
             <h2 className="text-4xl mb-8 text-center font-extrabold">Add a Toy</h2>
             <form onSubmit={handleAddToy}>
